@@ -1,11 +1,6 @@
-import webbrowser
-
 class Concept():
-    def __init__(self, concept_title, concept_description, concept_image, concept_youtube):
+    def __init__(self, concept_title, concept_description, poster_image):
         self.title = concept_title
         self.description = concept_description
-        self.concept_image_url = concept_image
-        self.concept_youtube_url = concept_youtube
+        self.poster_image_url = poster_image
 
-    def show_trailer(self):
-        webbrowser.open(self.concept_youtube_url)
